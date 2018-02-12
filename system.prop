@@ -57,3 +57,5 @@ persist.audio.fluence.audiorec=true
 persist.audio.fluence.speaker=false
 presist.audio.fluence.mode=endfire
 
+# Secure discard
+ro.lockscreen.secdiscard=false
