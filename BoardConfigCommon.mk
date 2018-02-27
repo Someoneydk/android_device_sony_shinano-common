@@ -96,7 +96,7 @@ BOARD_SEPOLICY_DIRS += \
 # Props for hotplugging
 TARGET_SYSTEM_PROP += device/sony/shinano-common/system.prop
 
-#Sensors
+# Sensors
 USE_SENSOR_MULTI_HAL := true
 
 # KCAL
@@ -118,6 +118,10 @@ BOARD_NFC_CHIPSET := pn547
 BOARD_NFC_DEVICE := /dev/pn547
 BOARD_NFC_HAL_SUFFIX := pn54x.default
 NXP_CHIP_TYPE := 1
+
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/lib/libfacenet.so|libprotobuf-cpp-shit.so
 
 # Filesystem
 BOARD_FLASH_BLOCK_SIZE := 131072

@@ -142,6 +142,9 @@ on boot
     # WiFi Firmware
     chown wifi wifi /sys/module/bcmdhd/parameters/firmware_path
 
+    # Mount 32-bit face lock lib over 64-bit version
+    mount none /system/vendor/lib/libfacenet-32.so /system/lib/libfacenet.so bind
+
     # Send single UNSOL_CALL_RING notification
     setprop ro.telephony.call_ring.multiple false
     
