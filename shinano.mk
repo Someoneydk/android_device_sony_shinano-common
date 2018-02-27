@@ -77,6 +77,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     tfa9890_amp
 
+# ANC
+PRODUCT_PACKAGES += \
+   ANCQuickSettings
+
 # Assertive Display
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ad_calib.cfg:system/etc/ad_calib.cfg
